@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'CustomFont'; /* Name for the font */
+    src: url('fonts/font.ttf') format('truetype'); /* Path to the font file */
+    font-weight: bolder; /* Specify weight (optional) */
+    font-style: italic; /* Specify style (optional) */
+}
+html, body {
+    font-family: 'CustomFont', sans-serif;
+    background-color: #f9f2e7; /* Light beige background */
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #5a3d2a; /* Warm beige color for titles */
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    color: #5a3d2a;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.pfp {
+    width: 200px; /* Set width and height equal for a perfect circle */
+    height: 200px;
+    background-size: cover; /* Ensures the image covers the circle */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('https://yt3.ggpht.com/SVCbPu2IUPiwRkLUHdNBCcADa28vvj-ehA41eTminx0d-ycQYF4fley9cU6oJBSE3Va8Z1yjVSw=s108-c-k-c0x00ffffff-no-rj');
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Ensures margin auto works */
+    border-radius: 50%; /* Make the shape a circle */
+    border: 10px solid rgb(209, 181, 121); /* Add beige border */
+    transition: transform 0.3s ease; /* Smooth transition for the scale effect */
+}
+
+/* Hover effect for the pfp */
+.pfp:hover {
+    transform: scale(1.05); /* Increase size to 120% on hover */
+}
+
+/* Top Bar Styles */
+.top-bar {
+    background-color: #8f6f56; /* Warm, earthy beige */
+    padding: 15px;
+    text-align: center;
+    border-bottom: 4px solid #5a3d2a;
+    height: 30px
+}
+
+.top-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar li {
+    display: inline;
+    margin: 0 20px;
+}
+
+/* Styling for links inside the top bar */
+.top-bar a {
+    color: white; /* Default white color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Default font size */
+    font-weight: bold; /* Bold font weight */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color */
+    text-align: center;
+}
+
+/* Hover effect for links */
+.top-bar a:hover {
+    color: #ffd3b9; /* Lighter beige color on hover */
+}
+
+
+
+
+/* Projects and Blog Sections */
+.projects, .blog {
+    padding: 25px;
+    margin: 20px auto;
+    background-color: #f9f2e7; /* Light beige background */
+    border-radius: 15px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for cozy feel */
+}
+
+.projects h2, .blog h2 {
+    text-align: center;
+    color: #5a3d2a;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.projects ul, .blog ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.projects li, .blog li {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.projects li a, .blog li a {
+    color: #8f6f56; /* Earthy brown color */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.projects li a:hover, .blog li a:hover {
+    text-decoration: underline;
+}
+
+/* Projects Cards Styling */
+.project-card {
+    background-color: #fff; /* White background for projects */
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px; /* Slightly rounded corners for a comfortable look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: all 0.3s ease;
+}
+
+.project-card h3 {
+    color: #5a3d2a; /* Warm beige for project titles */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #6c4f3d; /* Softer beige-brown for content */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.project-card:hover {
+    background-color: #f3e1c7; /* Slight beige hover effect */
+    transform: scale(1.02); /* Slight zoom effect for cozy feel */
+}
+
+/* Blog Post Styling */
+.blog .post {
+    background-color: #fff; /* White background for posts */
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: all 0.3s ease;
+}
+
+.blog .post h3 {
+    color: #5a3d2a; /* Warm title color */
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.blog .post .post-content {
+    color: #6c4f3d; /* Softer beige-brown for content */
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.blog .post:hover {
+    background-color: #f3e1c7; /* Slight beige hover effect */
+    transform: scale(1.02); /* Slight zoom effect for cozy feel */
+}
+
+.blog .post a {
+    color: #8f6f56;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.blog .post a:hover {
+    text-decoration: underline;
+}
+
+h3{
+    
+    text-align: center;
+}
